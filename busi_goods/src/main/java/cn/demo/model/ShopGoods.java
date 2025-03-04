@@ -1,0 +1,90 @@
+package cn.demo.model;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class ShopGoods {
+    private Long goodsId;
+
+    private String goodsName;
+
+    private Integer goodsNumber;
+
+    private BigDecimal goodsPrice;
+
+    private String goodsDesc;
+
+    private Date addTime;
+
+    private Integer version;
+
+    public ShopGoods(Long goodsId, String goodsName, Integer goodsNumber, BigDecimal goodsPrice, String goodsDesc, Date addTime, Integer version) {
+        this.goodsId = goodsId;
+        this.goodsName = goodsName;
+        this.goodsNumber = goodsNumber;
+        this.goodsPrice = goodsPrice;
+        this.goodsDesc = goodsDesc;
+        this.addTime = addTime;
+        this.version = version;
+    }
+
+    public ShopGoods() {
+        super();
+    }
+
+    public Long getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(Long goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public String getGoodsName() {
+        return goodsName;
+    }
+
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName == null ? null : goodsName.trim();
+    }
+
+    public Integer getGoodsNumber() {
+        return goodsNumber;
+    }
+
+    public void setGoodsNumber(Integer goodsNumber) {
+        this.goodsNumber = goodsNumber;
+    }
+
+    public BigDecimal getGoodsPrice() {
+        return goodsPrice;
+    }
+
+    public void setGoodsPrice(BigDecimal goodsPrice) {
+        this.goodsPrice = goodsPrice;
+    }
+
+    public String getGoodsDesc() {
+        return goodsDesc;
+    }
+
+    public void setGoodsDesc(String goodsDesc) {
+        this.goodsDesc = goodsDesc == null ? null : goodsDesc.trim();
+    }
+
+    public Date getAddTime() {
+        return addTime;
+    }
+
+    public void setAddTime(Date addTime) {
+        this.addTime = addTime;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+}
